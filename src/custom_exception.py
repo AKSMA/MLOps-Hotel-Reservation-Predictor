@@ -9,7 +9,7 @@ class CustomException(Exception):
 
     @staticmethod
     def get_detailed_error_message(error_message,error_detail:sys):
-        _,_,exe_tb=error_detail.exc_info()
+        _,_,exe_tb=traceback.sys.exc_info()
         file_name=exe_tb.tb_frame.f_code.co_filename
         line_number=exe_tb.tb_frame.f_lineno
 
