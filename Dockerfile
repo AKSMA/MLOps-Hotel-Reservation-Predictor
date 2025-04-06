@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.10-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1\
     PYTHONUNBUFFERED=1
@@ -18,4 +18,4 @@ RUN python pipeline/training_pipeline.py
 
 EXPOSE 8080
 
-CMD ["python", "application.py"]
+CMD ["python3", "application.py"]
